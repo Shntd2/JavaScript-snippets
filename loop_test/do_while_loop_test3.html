@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Do while JS loop test</title>
+</head>
+<body>
+    <script>
+        let password;
+
+        console.log('Entering do-while loop');
+        do {
+            console.log('Prompting for password');
+            password = prompt('Enter a password (must be at least 6 characters): ');
+            console.log(`Password length: ${password.length}`);
+        } while (password.length <= 6);
+
+        console.log('Exiting do-while loop');
+        console.log('Valid password entered');
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Do while JS loop test</title>
+</head>
+<body>
+    <h2>Activities Log</h2><br>
+
+    <p>Menu:</p>
+    <p>1. Option 1</p>
+    <p>2. Option 2</p>
+    <p>3. Exit</p><br>
+    
+    <div id="output"></div>
+
+    <script>
+        let choice;
+        const outputDiv = document.getElementById('output');
+
+        do {
+            choice = prompt(`Enter your choice:
+                            1. Option 1
+                            2. Option 2
+                            3. Exit`);
+
+            switch (choice) {
+                case '1':
+                    outputDiv.innerHTML += '<p>Executing Option 1...</p>';
+                    break;
+                case '2':
+                    outputDiv.innerHTML += '<p>Executing Option 2...</p>';
+                    break;
+                case '3':
+                    outputDiv.innerHTML += '<p>Exiting program...</p>';
+                    break;
+                default:
+                    outputDiv.innerHTML += '<p>Invalid choice. Please try again</p>';
+            }
+        } while (choice !== '3');
+    </script>
+</body>
+</html>
