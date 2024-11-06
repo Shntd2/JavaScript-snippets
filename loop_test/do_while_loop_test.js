@@ -1,4 +1,4 @@
-let count = 0;
+let count = 5;
 
 do {
     console.log(`Hello #${count}`);
