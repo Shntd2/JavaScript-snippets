@@ -18,7 +18,7 @@ for (let person of persons) {
     for (let [key, value] of Object.entries(person)) {
         people += `${key}: ${value}\n`;
     }
-    people += `nationaluty: ${person.nationality}\n`
+    people += `nationality: ${person.nationality}\n`
     people += '\n'
 } 
 
